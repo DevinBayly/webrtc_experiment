@@ -82,7 +82,7 @@
 			channel.onclose = dcClose
 				channel.onmessage = dcMessage
 });
-			const remoteStream = MediaStream();
+			const remoteStream = new MediaStream();
 			remVid.srcObject = remoteStream;
 
 pc.addEventListener('track', async (event) => {
