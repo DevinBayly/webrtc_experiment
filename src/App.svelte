@@ -65,13 +65,6 @@
 			pc.createOffer(sdpConstraints).then(sd=> {
 				local.value = JSON.stringify(sd)
 				pc.setLocalDescription(sd)
-        new QR({
-        target:document.body,
-        props: {
-          contents:JSON.stringify(sd),
-          label:'first offer sd'
-          }
-        })
 			})
 			console.log("sent offer")
 			
